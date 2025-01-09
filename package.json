@@ -1,0 +1,22 @@
+{
+  "name": "desafio-tecnico-sistema-de-cadastro",
+  "version": "1.0.0",
+  "description": "Este é um sistema simples de cadastro de usuários que permite realizar as seguintes ações:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "semantic-release": "^24.2.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

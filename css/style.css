@@ -1,0 +1,281 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Poppins", serif;
+    border-radius: 5px 5px 0px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 8px;
+    font-size: 14px;
+}
+
+button {
+    padding: 10px;
+    background-color: #FF4F00;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+    transition: 0.9s ease-in-out;
+}
+
+table {
+    width: 100%;
+    margin: 10px 0;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+table th,
+table td {
+    padding: 12px;
+    text-align: center;
+    font-size: 14px;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+table tr:hover {
+    background-color: #f4f4f9;
+}
+
+table td {
+    background-color: #f9f9f9;
+}
+
+table td i {
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+table td i:hover {
+    color: #FF4F00;
+}
+
+table td.actions {
+    border-left: 1px solid #ddd;
+    padding-left: 15px;
+}
+
+main {
+    padding: 10px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Poppins", serif;
+
+    h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+}
+
+#formCadastroContainer {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+    gap: 10px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+
+    h1 {
+        height: 100%;
+        color: #eee;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+        height: 100%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+
+        .input-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        input {
+            margin-top: 8px;
+            padding: 10px;
+            font-size: 14px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            width: 100%;
+            padding-left: 30px;
+            border-color: green;
+        }
+
+        [required]:placeholder-shown {
+            border-color: red;
+        }
+
+        .input-container i {
+            left: 10px;
+            bottom: 13px;
+            position: absolute;
+            font-size: 18px;
+            color: #888;
+        }
+
+        input:focus {
+            outline: none;
+            box-shadow: 0px 0px 8px rgba(76, 175, 80, 0.3);
+        }
+    }
+
+    button {
+        margin-top: 10px;
+    }
+}
+
+.formContainer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+
+    h1 {
+        height: 100px;
+        width: 100%;
+        color: #ddd;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    form {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+
+        button {
+            border-radius: 3px;
+            width: 250px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    #mainLister {
+        height: auto;
+    }
+
+    #formCadastroContainer {
+        width: 90%;
+        height: auto;
+
+        h1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100px;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        form {
+            width: 90%;
+        }
+    }
+
+    input {
+        font-size: 12px;
+    }
+
+    table th,
+    table td {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    table {
+        table-layout: auto;
+    }
+
+    .formContainer {
+        justify-content: center;
+        margin-top: 20px;
+
+        form {
+            width: 100%;
+
+            button {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+
+    #formCadastroContainer {
+        width: 90%;
+        height: auto;
+
+        h1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100px;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        form {
+            width: 90%;
+        }
+
+    }
+
+    input {
+        font-size: 10px;
+    }
+
+    table th,
+    table td {
+        font-size: 10px;
+        padding: 6px;
+    }
+}
