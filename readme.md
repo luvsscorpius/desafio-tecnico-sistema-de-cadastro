@@ -41,7 +41,7 @@ Para rodar este projeto em sua máquina local, siga as instruções abaixo:
 
 1. Clone este repositório em sua máquina:
     ```bash
-    git clone https://github.com/seu-usuario/nome-do-repositorio.git
+    git clone https://github.com/luvsscorpius/desafio-tecnico-sistema-de-cadastro
     ```
 
 2. Crie um banco de dados MySQL chamado `cadastro_usuarios` e execute o seguinte script para criar a tabela de usuários:
